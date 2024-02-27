@@ -8,7 +8,9 @@ This rep consists the implementation:
 
 Below is an illustration of the general framework of integrating LLM in MOEA/D, for more information and results please refer to manuscript [LLM4MOEA](https://arxiv.org/abs/2310.12541)
 
-If you find the code is helpful, please cite : Fei Liu, Xi Lin, Zhenkun Wang, Shunyu Yao, Xialiang Tong, Mingxuan Yuan, and Qingfu Zhang. "Large language model for multi-objective evolutionary optimization." arXiv preprint arXiv:2310.12541 (2023).
+If you find the code is helpful, please cite : 
+Fei Liu, Xi Lin, Zhenkun Wang, Shunyu Yao, Xialiang Tong, Mingxuan Yuan, and Qingfu Zhang. "Large language model for multi-objective evolutionary optimization." arXiv preprint arXiv:2310.12541 (2023).
+
 
 If you are interested in **LLM for algorithm design**, following are our recent related works:
 
