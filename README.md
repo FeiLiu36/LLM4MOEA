@@ -62,3 +62,22 @@ You can also
 
 
 
+# From LLM Results to Linear Operator
+
+> cd LLM2LO
+>
+> python LinearReg.py
+>
+> python PolyReg.py
+
+where two regressions are in two levels
+
++ LinearReg.py  performs linear regression on samples (**X to Y**) from data.txt. 10 weights are produced
++ PolyReg.py performs polynomial regression on weight (**Weight to Rank**). Weights for poly regression are produced
+
+The resulted regression of weight vs. rank should be  as follows (slightly different from the results in manuscript with different random seeds):
+
+<img src='./figures/WeightVsRank.png' alt='image' width='500' height='auto'>
+
+
+
