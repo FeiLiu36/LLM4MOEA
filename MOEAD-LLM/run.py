@@ -54,15 +54,15 @@ def get_algorithm(algorithmname):
 if __name__ == '__main__':
 
     algorithmname = "MOEAD_LLM" # NSGA-II, MOEAD, MOEAD_LLM
-    record_gpt_solution = True # record the input and oupt of each run of gpt
+    record_gpt_solution = False # record the input and oupt of each run of gpt to learn a general linear operator
     model_LLM = "gpt-3.5-turbo" #"model": "gpt-3.5-turbo",
                             #"model": "gpt-4-0613",
-    key = "fk198715-4a9tb8giFcMjEkfezQBHUAtSwaHjdXo9"
+    key = "fk XXXX" # your key
     debug_mode = False
 
     pop_size = 50
     neighbor_size = 10
-    n_gen = 50
+    n_gen = 10
     n_partition = 10 # for three objective only
 
     problemname = "RE21"
