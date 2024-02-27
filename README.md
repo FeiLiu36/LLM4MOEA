@@ -20,7 +20,7 @@ If you are interested in **LLM for algorithm design**, following are our recent 
 
 
 
-<img src='./figures/Framework.jpg' alt='image' width='500' height='auto'>
+<img src='./figures/Framework.JPG' alt='image' width='500' height='auto'>
 
 # Usage
 
