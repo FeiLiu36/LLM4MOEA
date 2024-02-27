@@ -29,7 +29,8 @@ If you are interested in **LLM for algorithm design**, following are our recent 
 **MOEA/D-LLM**
 
 Implemented in [Pymmo](https://pymoo.org/) 
-**Set you key before start !**
+
+**Set you LLM key before start !**
 
 > cd MOEAD-LLM
 >
