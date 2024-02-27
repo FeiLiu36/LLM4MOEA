@@ -22,23 +22,6 @@ y = data[:, -1]
 # Save the dataset to the text file
 np.savetxt('datasave.txt', data, delimiter=' ')
 
-# Calculate differences between the last variable and all others for each sample
-#differences = X[:, -1:] - X[:, :-1]
-
-# Concatenate differences to X
-#X = np.concatenate((X, differences), axis=1)
-#print(X[0])
-
-
-# Split the data into training and testing sets
-#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.01, random_state=1)
-
-# # Create polynomial features up to degree 2
-# degree = 2
-# poly_features = PolynomialFeatures(degree=degree)
-# X_train_poly = poly_features.fit_transform(X_train)
-# X_test_poly = poly_features.transform(X_test)
-
 # Create a Linear Regression model
 model = LinearRegression(fit_intercept=False)
 
