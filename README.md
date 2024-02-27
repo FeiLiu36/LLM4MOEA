@@ -1,18 +1,18 @@
 # LLM4MOEA
 Large Language Model (LLM) for Multiobjective Evolutionary Algorithm (MOEA)
 
-This rep consists the implementation:
+This Rep consists the implementation of:
 
 + **MOEA/D-LLM**:  LLM (GPT) serves as a blackbox search operator for decomposition-based MOEA (MOEA/D)
 + **MOEA/D-LO**: learning from the LLM behavior, we further design an explicit white-box operator with randomness and propose a new version of decomposition-based MOEA, termed MOEA/D-LO.
 
 Below is an illustration of the general framework of integrating LLM in MOEA/D, for more information and results please refer to manuscript [LLM4MOEA](https://arxiv.org/abs/2310.12541)
 
-If you find the code is helpful, please cite : 
+If you find the code helpful, please cite : 
 Fei Liu, Xi Lin, Zhenkun Wang, Shunyu Yao, Xialiang Tong, Mingxuan Yuan, and Qingfu Zhang. "Large language model for multi-objective evolutionary optimization." arXiv preprint arXiv:2310.12541 (2023).
 
 
-If you are interested in **LLM for algorithm design**, following are our recent related works:
+If you are interested in **LLM for algorithm design**, the following are our recent related works:
 
 + [Algorithm Evolution using LLM (AEL)](https://arxiv.org/abs/2311.15249)
 
@@ -30,7 +30,7 @@ If you are interested in **LLM for algorithm design**, following are our recent 
 
 Implemented in [Pymmo](https://pymoo.org/) 
 
-**Set you LLM key before start !**
+**Set your LLM key before start !**
 
 > cd MOEAD-LLM
 >
@@ -56,11 +56,11 @@ In our implementation, we use [API2D API](https://api2d.com/) to request respons
 
 **Step 1:** Create your key from API2D 
 
-**Step 2:** copy your own API2D API Key to run.py. No additional settings are required.
+**Step 2:** Copy your own API2D API Key to run.py. No additional settings are required.
 
 You can also 
 
-+ use official API from OpenAI
++ Use official API from OpenAI
 
 + Or local open-source LLM model, such as Llama2, Gemma
 
