@@ -10,7 +10,8 @@ Below is an illustration of the general framework of integrating LLM in MOEA/D, 
 
 If you find the code helpful, please cite : 
 Fei Liu, Xi Lin, Zhenkun Wang, Shunyu Yao, Xialiang Tong, Mingxuan Yuan, and Qingfu Zhang. "Large language model for multi-objective evolutionary optimization." arXiv preprint arXiv:2310.12541 (2023).
-[paper link](https://arxiv.org/abs/2310.12541)
+
+[ArXiv paper link](https://arxiv.org/abs/2310.12541)
 
 If you are interested in **LLM for algorithm design**, the following are our recent related works:
 
