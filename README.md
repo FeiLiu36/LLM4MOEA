@@ -29,7 +29,7 @@ If you are interested in **LLM for algorithm design**, the following are our rec
 
 **MOEA/D-LLM**
 
-Implemented in [Pymmo](https://pymoo.org/) 
+Implemented in [Pymoo](https://pymoo.org/) 
 
 **Set your LLM key before start !**
 
