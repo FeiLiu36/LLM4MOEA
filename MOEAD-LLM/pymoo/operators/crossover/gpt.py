@@ -108,19 +108,20 @@ class GPT(Crossover):
                 off_string2 = re.findall(r"<start>(.*?)<end>", response)[1]
                 off2 = np.fromstring(off_string2, sep=",", dtype=float)
 
-                filename=out_filename
-                file = open (filename,"a")
-                for i in range(len(x_p)):
-                    for j in range(len(x_p[i])):
-                        file.write("{:.4f} ".format(x_p[i][j]))
-                    file.write("{:.4f} ".format(y_p[i]))
-                for i in range(len(off1)):
-                    file.write("{:.4f} ".format(off1[i]))
-                for i in range(len(off1)):
-                    file.write("{:.4f} ".format(off2[i]))
-                #file.write("{:.4f} {:.4f} {:.4f} {:.4f} \n".format(off1[0],off1[1],off[1][0][0],off[1][0][1]))
-                file.write("\n")
-                file.close
+                if out_filename != None:
+                    filename=out_filename
+                    file = open (filename,"a")
+                    for i in range(len(x_p)):
+                        for j in range(len(x_p[i])):
+                            file.write("{:.4f} ".format(x_p[i][j]))
+                        file.write("{:.4f} ".format(y_p[i]))
+                    for i in range(len(off1)):
+                        file.write("{:.4f} ".format(off1[i]))
+                    for i in range(len(off1)):
+                        file.write("{:.4f} ".format(off2[i]))
+                    #file.write("{:.4f} {:.4f} {:.4f} {:.4f} \n".format(off1[0],off1[1],off[1][0][0],off[1][0][1]))
+                    file.write("\n")
+                    file.close
 
                 off1[np.where(off1<0)] = 0.0
                 off1[np.where(off1>1)] = 1.0
