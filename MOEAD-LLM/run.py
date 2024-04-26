@@ -74,6 +74,8 @@ if __name__ == '__main__':
         out_filename_gpt=outputfile+problemname+"_d"+str(dimension)+"_gpt_sample.dat"
         file = open (out_filename_gpt,"w")
         file.close()
+    else:
+        out_filename_gpt= None
 
     if problemname in ["RE31","RE32","RE33","RE34","RE37"]:
         ref_dirs = get_reference_directions("uniform", 3, n_partitions=n_partition)   
