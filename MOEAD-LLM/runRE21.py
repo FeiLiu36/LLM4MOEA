@@ -70,8 +70,8 @@ if __name__ == '__main__':
     model_LLM = "gpt-3.5-turbo" #"model": "gpt-3.5-turbo",
                             #"model": "gpt-4-0613",
 				#gemini-pro
-    endpoint = "api.chatanywhere.tech"
-    key = "sk-BlawLfF8RIJCxpVZXK8Tt9El7uNbcmHmDosImqsFhqpgzmWM" # your key
+    endpoint = "" # LLM API endpoint
+    key = "" # your key
     debug_mode = False
 
     pop_size = 50
