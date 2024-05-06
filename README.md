@@ -14,7 +14,7 @@ Fei Liu, Xi Lin, Zhenkun Wang, Shunyu Yao, Xialiang Tong, Mingxuan Yuan, and Qin
 [ArXiv paper link](https://arxiv.org/abs/2310.12541)
 
 If you are interested in **LLM for algorithm design**, we recommend:
-+ A Platform for LLM for using automatic algorithm design [Evolution of Heuristics] (https://github.com/FeiLiu36/EoH)
++ A Platform for LLM for using automatic algorithm design [Evolution of Heuristics](https://github.com/FeiLiu36/EoH)
 + A collection on references and research papers on [LLM for optimization (LLM4Opt)](https://github.com/FeiLiu36/LLM4Opt)
 
 
