@@ -27,7 +27,7 @@ If you are interested in **LLM for algorithm design**, we recommend:
 
 Implemented in [Pymoo](https://pymoo.org/) 
 
-**Set your LLM key before start !**
+**Set your LLM Endpoint, key, and model before start !**
 
 > cd MOEAD-LLM
 >
