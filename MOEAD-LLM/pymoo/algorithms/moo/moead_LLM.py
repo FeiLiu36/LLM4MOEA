@@ -55,11 +55,13 @@ class MOEAD_LLM(LoopwiseAlgorithm, GeneticAlgorithm):
                  output=MultiObjectiveOutput(),
                  debug_mode = False,
                  model_LLM = None,
+                 endpoint = None,
                  key = None,
                  out_file = None,
                  **kwargs):
 
         self.debug_mode = debug_mode
+        self.endpoint = endpoint
         self.model_LLM = model_LLM
         self.key = key
         self.out_file = out_file
@@ -124,7 +126,7 @@ class MOEAD_LLM(LoopwiseAlgorithm, GeneticAlgorithm):
 
             # perform a mating using the default operators - if more than one offspring just pick the first
             off = np.random.choice(self.mating.do(self.problem, pop,  1,parents=P, n_max_iterations=1,Y=FDP,\
-                                                  debug_mode=self.debug_mode, model_LLM=self.model_LLM, key = self.key,out_filename=self.out_file,parents_obj=P))
+                                                  debug_mode=self.debug_mode, model_LLM=self.model_LLM, endpoint =self.endpoint, key = self.key,out_filename=self.out_file,parents_obj=P))
 
             # evaluate the offspring
             off = yield off

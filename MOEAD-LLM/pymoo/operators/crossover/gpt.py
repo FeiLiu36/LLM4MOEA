@@ -27,7 +27,7 @@ class GPT(Crossover):
                         +"Give me two new points that are different from all points above, and not dominated by any of the above. Do not write code. Do not give any explanation. Each output new point must start with <start> and end with <end>"
         return prompt_content
 
-    def _do(self, _, X, Y,  debug_mode,model_LLM,key,out_filename,parents_obj, **kwargs):
+    def _do(self, _, X, Y,  debug_mode,model_LLM,endpoint,key,out_filename,parents_obj, **kwargs):
 
         #x_scale = 1000.0
         y_p = np.zeros(len(Y))
@@ -72,11 +72,13 @@ class GPT(Crossover):
         'Content-Type': 'application/json',
         'x-api2d-no-cache': 1
         }
+        
+        conn = http.client.HTTPSConnection(endpoint)
 
-        conn = http.client.HTTPSConnection("oa.api2d.site")
+        #conn = http.client.HTTPSConnection("oa.api2d.site")
         #conn.request("POST", "/v1/chat/completions", payload, headers)
 
-        retries = 5  # Number of retries
+        retries = 50  # Number of retries
         retry_delay = 2  # Delay between retries (in seconds)
         while retries > 0:
             try:
@@ -92,7 +94,8 @@ class GPT(Crossover):
                 response = json_data['choices'][0]['message']['content']
 
                 while(len(re.findall(r"<start>(.*?)<end>", response))<2):
-                    conn = http.client.HTTPSConnection("oa.api2d.site")
+                    conn = http.client.HTTPSConnection(endpoint)
+                    #conn = http.client.HTTPSConnection("oa.api2d.site")
                     conn.request("POST", "/v1/chat/completions", payload, headers)
                     res = conn.getresponse()
                     data = res.read()
@@ -134,7 +137,7 @@ class GPT(Crossover):
                 break
 
             except:
-                print("Request failed !  ")
+                print(f"Request {retries} failed !  ")
                 retries -= 1
                 if retries > 0:
                     print("Retrying in", retry_delay, "seconds...")

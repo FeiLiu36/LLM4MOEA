@@ -72,6 +72,7 @@ if __name__ == '__main__':
 				#gemini-pro
     endpoint = "" # LLM API endpoint
     key = "" # your key
+
     debug_mode = False
 
     pop_size = 50
@@ -84,7 +85,7 @@ if __name__ == '__main__':
 
     n_repeat = 3
     for prob in problems:
-        for n in n_repeat:
+        for n in range(n_repeat):
 
             problemname = prob
             dimension = 4
